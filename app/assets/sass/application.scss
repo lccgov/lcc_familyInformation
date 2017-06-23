@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,700,800,400,600');
 // available variables to change the brand colours as required
 // masterhead.scss
 
@@ -132,6 +133,8 @@ $accordion-color:#8C5AA0;
 @import 'contentLink';
 @import 'docList';
 @import 'contentAssets';
+@import 'accessibility';
+@import 'browser-alert';
 
 
 body{
