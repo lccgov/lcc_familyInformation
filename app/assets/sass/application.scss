@@ -127,6 +127,11 @@ $primary-button-color:white !default;
 //@import 'survey-webpart'; //is it leeds.gov specific? Relys on where-i-live which should be in the fet but renamed to search-panel - DH
 @import 'url-helper';
 @import 'webchat';
+
+// New components
+@import 'component_example';
+@import 'fis-footer';
+
 .masterhead {
     height: 60px;
 }
@@ -226,39 +231,6 @@ h4 {
     background-position:center right 15px;
     background-repeat:no-repeat;
     height: 120px;
-}
-
-//footer
-footer.main {
-    background-color: $dark-grey;
-    position: relative;
-    margin-top: 220px;
-    &:before {
-        content: "";
-        background-image: url(../images/footer.svg);
-        background-position: center bottom;
-        height: 181px;
-        width: 100%;
-        display: block;
-        position: absolute;
-        top: -180px;
-    }
-    .footer {
-        background: $dark-grey;
-        &:after {
-            content: "";
-            width: 85px;
-            height: 85px;
-            display: inline-block;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            background: url(../images/cfl-logo-white.png) center center no-repeat;
-        }
-    }
-    .footerGlobal {
-        background: darken($dark-grey, 10%);
-    }
 }
 
 .promoListWebpart ul {

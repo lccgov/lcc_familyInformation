@@ -1,0 +1,106 @@
+
+footer.main {
+    footer {
+        background: $main-nav-background;
+    }
+    .footerGlobal {
+        background: $main-nav-background;
+        nav {
+            ul {
+                li {
+                    margin-bottom: 10px;
+                    a {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #e5f1f5;
+                        border: 0;
+                        text-decoration: underline;
+                    }
+                    &:only-of-type {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    &:last-child {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }                
+            }
+        }   
+        .logo-footer {
+            padding-top: 10px;
+            p {
+                margin-bottom: 0;
+                margin-top: 15px;
+                font-size: 16px;
+                font-weight: 300;
+            }
+            
+        }     
+    }
+    .socialBookmarks {
+        padding-top: 20px;
+        margin: 0;
+        ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            li {
+                margin: 10px 10px 0 0;
+                a {
+                    &.facebook:after,
+                    &.twitter:after,
+                    &.youtube:after,
+                    &.email:after,
+                    &.instagram:after {
+                        font-size: 30px;
+                        width: 70px;
+                        height: 70px;
+                        padding-top: 21px;
+                    }
+                    &:hover { 
+                        text-decoration: none !important;                   
+                        &.facebook:after,
+                        &.twitter:after,
+                        &.youtube:after,
+                        &.email:after,
+                        &.instagram:after {
+                            color: $dark-grey; 
+                        }
+                    }
+                }
+                &:first-of-type {
+                    display: inline-block;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 641px) {
+    footer.main .footerGlobal nav ul li a {
+        font-size: 16px;
+    }
+}
+
+.logo-footer span {
+    background: url(../images/lcc-logo-white-01.svg) center center/100% 100% no-repeat;
+}
+
+@media (min-width: 768px) {
+    footer.main .footerGlobal nav ul li a {
+        font-size: 19px;
+    }
+    footer.main .socialBookmarks {
+        padding-top: 0;
+        float: right;
+    }
+}
